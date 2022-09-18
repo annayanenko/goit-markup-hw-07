@@ -20,33 +20,43 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="page-header">
-      <div class="container header-content">
-        <a class="logo-link" href="./index.html"
-          >Web<span class="logo-part">Studio</span></a
+      <div class="container page-header__container">
+        <a class="logo page-header__logo" href="./index.html"
+          >Web<span class="logo__item">Studio</span></a
         >
-        <nav class="nav-container">
-          <ul class="nav-list list">
-            <li>
-              <a class="nav-link current" href="./index.html">Студія</a>
+        <nav class="navigation">
+          <ul class="navigation__list list">
+            <li class="navigation__list-item">
+              <a
+                class="link navigation__link navigation__link_current"
+                href="./index.html"
+                >Студія</a
+              >
             </li>
-            <li><a class="nav-link" href="./portfolio.html">Портфоліо</a></li>
-            <li><a class="nav-link" href="#">Контакти</a></li>
+            <li class="navigation__list-item">
+              <a class="link navigation__link" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="navigation__list-item">
+              <a class="link navigation__link" href="#">Контакти</a>
+            </li>
           </ul>
         </nav>
         <ul class="contact-list list">
-          <li>
+          <li class="contact-list__item">
             <a
-              class="contact-link"
+              class="link contact-list__link"
               href="mailto:info@devstudio.com"
               target="_blank"
             >
               <svg
                 aria-label="іконка пошти"
-                class="icon-header"
+                class="contact-list__icon"
                 width="16"
                 height="12"
               >
@@ -54,11 +64,11 @@
               >info@devstudio.com</a
             >
           </li>
-          <li>
-            <a class="contact-link" href="tel:+380961111111"
+          <li class="contact-list__item">
+            <a class="link contact-list__link" href="tel:+380961111111"
               ><svg
                 aria-label="іконка телефону"
-                class="icon-header"
+                class="contact-list__icon"
                 width="12"
                 height="16"
               >
@@ -70,10 +80,16 @@
       </div>
     </header>
     <main>
-      <section class="main-section">
+      <section class="section-hero">
         <div class="container">
-          <h1 class="studio-heading">Ефективні рішення для вашого бізнесу</h1>
-          <button class="studio-button" type="button" data-modal-open>
+          <h1 class="section-hero__heading">
+            Ефективні рішення для вашого бізнесу
+          </h1>
+          <button
+            class="button section-hero__button"
+            type="button"
+            data-modal-open
+          >
             Замовити послугу
           </button>
         </div>
@@ -81,70 +97,70 @@
       <section class="advantages-section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
-          <ul class="advantages-list list">
+          <ul class="advantages-section__list list">
             <li>
-              <div class="advantages-icon-box">
+              <div class="advantages-section__icon-box">
                 <svg
                   aria-label="іконка антени"
-                  class="advantages-icon"
+                  class="advantages-section__icon"
                   width="70"
                   height="70"
                 >
                   <use href="./images/sprite.svg#icon-antenna-1"></use>
                 </svg>
               </div>
-              <h3 class="advantages-heading">Увага до деталей</h3>
-              <p class="advantages-paragraph">
+              <h3 class="advantages-section__heading">Увага до деталей</h3>
+              <p class="advantages-section__paragraph">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
             <li>
-              <div class="advantages-icon-box">
+              <div class="advantages-section__icon-box">
                 <svg
                   aria-label="іконка годинника"
-                  class="advantages-icon"
+                  class="advantages-section__icon"
                   width="70"
                   height="70"
                 >
                   <use href="./images/sprite.svg#icon-clock-1"></use>
                 </svg>
               </div>
-              <h3 class="advantages-heading">Пунктуальність</h3>
-              <p class="advantages-paragraph">
+              <h3 class="advantages-section__heading">Пунктуальність</h3>
+              <p class="advantages-section__paragraph">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
             <li>
-              <div class="advantages-icon-box">
+              <div class="advantages-section__icon-box">
                 <svg
                   aria-label="іконка діаграми"
-                  class="advantages-icon"
+                  class="advantages-section__icon"
                   width="70"
                   height="70"
                 >
                   <use href="./images/sprite.svg#icon-diagram-1"></use>
                 </svg>
               </div>
-              <h3 class="advantages-heading">Планування</h3>
-              <p class="advantages-paragraph">
+              <h3 class="advantages-section__heading">Планування</h3>
+              <p class="advantages-section__paragraph">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li>
-              <div class="advantages-icon-box">
+              <div class="advantages-section__icon-box">
                 <svg
                   aria-label="іконка астронавта"
-                  class="advantages-icon"
+                  class="advantages-section__icon"
                   width="70"
                   height="70"
                 >
                   <use href="./images/sprite.svg#icon-astronaut-1"></use>
                 </svg>
               </div>
-              <h3 class="advantages-heading">Сучасні технології</h3>
-              <p class="advantages-paragraph">
+              <h3 class="advantages-section__heading">Сучасні технології</h3>
+              <p class="advantages-section__paragraph">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -154,44 +170,50 @@
       </section>
       <section class="activity-section">
         <div class="container">
-          <h2 class="activity-heading">Чим ми займаємося</h2>
-          <ul class="activity-list list">
-            <li class="act-list-item">
-              <div class="activity-thumb">
+          <h2 class="section-heading">Чим ми займаємося</h2>
+          <ul class="activity-section__list list">
+            <li class="activity-section-list-item">
+              <div class="activity-section__thumb">
                 <img
                   src="./images/img-1.jpg"
                   alt="Людина працює за комп'ютером"
                   width="370"
                   height="294"
                 />
-                <div class="activity-overlay">
-                  <p class="overlay-paragraph">Десктопні додатки</p>
+                <div class="activity-section__overlay">
+                  <p class="activity-section__overlay__paragraph">
+                    Десктопні додатки
+                  </p>
                 </div>
               </div>
             </li>
             <li class="act-list-item">
-              <div class="activity-thumb">
+              <div class="activity-section__thumb">
                 <img
                   src="./images/img-2.jpg"
                   alt="Людина працює з телефоном та ноутбуком"
                   width="370"
                   height="294"
                 />
-                <div class="activity-overlay">
-                  <p class="overlay-paragraph">Мобільні додатки</p>
+                <div class="activity-section__overlay">
+                  <p class="activity-section__overlay__paragraph">
+                    Мобільні додатки
+                  </p>
                 </div>
               </div>
             </li>
             <li class="act-list-item">
-              <div class="activity-thumb">
+              <div class="activity-section__thumb">
                 <img
                   src="./images/img-3.jpg"
                   alt="Людина дивиться на палітру кольорів у планшеті"
                   width="370"
                   height="294"
                 />
-                <div class="activity-overlay">
-                  <p class="overlay-paragraph">Дизайнерські рішення</p>
+                <div class="activity-section__overlay">
+                  <p class="activity-section__overlay__paragraph">
+                    Дизайнерські рішення
+                  </p>
                 </div>
               </div>
             </li>
@@ -200,7 +222,7 @@
       </section>
       <section class="team-section">
         <div class="container">
-          <h2 class="team-heading">Наша команда</h2>
+          <h2 class="section-heading">Наша команда</h2>
 
           <ul class="team-list list">
             <li class="team-card">
@@ -210,16 +232,16 @@
                 width="270"
                 height="260"
               />
-              <div class="team-card-text">
-                <h3 class="team-name">Ігор Дем'яненко</h3>
-                <p class="team-position" lang="en">Product Designer</p>
+              <div class="team-card__text">
+                <h3 class="team-card__name">Ігор Дем'яненко</h3>
+                <p class="team-card__position" lang="en">Product Designer</p>
 
                 <ul class="team-link-list list">
-                  <li class="team-link-item">
-                    <a class="team-link" href="#">
+                  <li class="team-link-list__item">
+                    <a class="team-link-list__link" href="#">
                       <svg
                         aria-label="іконка інстаграма"
-                        class="team-icon"
+                        class="team-link-list__icon"
                         width="20"
                         height="20"
                       >
@@ -227,11 +249,11 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-link-item">
-                    <a class="team-link" href="#">
+                  <li class="team-link-list__item">
+                    <a class="team-link-list__link" href="#">
                       <svg
                         aria-label="ікнока твітера"
-                        class="team-icon"
+                        class="team-link-list__icon"
                         width="20"
                         height="20"
                       >
@@ -239,11 +261,11 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-link-item">
-                    <a class="team-link" href="#">
+                  <li class="team-link-list__item">
+                    <a class="team-link-list__link" href="#">
                       <svg
                         aria-label="іконка фейсбука"
-                        class="team-icon"
+                        class="team-link-list__icon"
                         width="20"
                         height="20"
                       >
@@ -251,11 +273,11 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-link-item">
-                    <a class="team-link" href="#">
+                  <li class="team-link-list__item">
+                    <a class="team-link-list__link" href="#">
                       <svg
                         aria-label="іконка лінкедіна"
-                        class="team-icon"
+                        class="team-link-list__icon"
                         width="20"
                         height="20"
                       >
@@ -273,16 +295,16 @@
                 width="270"
                 height="260"
               />
-              <div class="team-card-text">
-                <h3 class="team-name">Ольга Рєпіна</h3>
-                <p class="team-position" lang="en">Frontend Developer</p>
+              <div class="team-card__text">
+                <h3 class="team-card__name">Ольга Рєпіна</h3>
+                <p class="team-card__position" lang="en">Frontend Developer</p>
 
                 <ul class="team-link-list list">
-                  <li class="team-link-item">
-                    <a class="team-link" href="#">
+                  <li class="team-link-list__item">
+                    <a class="team-link-list__link" href="#">
                       <svg
                         aria-label="іконка інстаграма"
-                        class="team-icon"
+                        class="team-link-list__icon"
                         width="20"
                         height="20"
                       >
@@ -290,11 +312,11 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-link-item">
-                    <a class="team-link" href="#">
+                  <li class="team-link-list__item">
+                    <a class="team-link-list__link" href="#">
                       <svg
                         aria-label="іконка твітера"
-                        class="team-icon"
+                        class="team-link-list__icon"
                         width="20"
                         height="20"
                       >
@@ -302,11 +324,11 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-link-item">
-                    <a class="team-link" href="#">
+                  <li class="team-link-list__item">
+                    <a class="team-link-list__link" href="#">
                       <svg
                         aria-label="іконка фейсбука"
-                        class="team-icon"
+                        class="team-link-list__icon"
                         width="20"
                         height="20"
                       >
@@ -314,11 +336,11 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-link-item">
-                    <a class="team-link" href="#">
+                  <li class="team-link-list__item">
+                    <a class="team-link-list__link" href="#">
                       <svg
                         aria-label="іконка лінкедіна"
-                        class="team-icon"
+                        class="team-link-list__icon"
                         width="20"
                         height="20"
                       >
@@ -336,16 +358,16 @@
                 width="270"
                 height="260"
               />
-              <div class="team-card-text">
-                <h3 class="team-name">Микола Тарасов</h3>
-                <p class="team-position" lang="en">Marketing</p>
+              <div class="team-card__text">
+                <h3 class="team-card__name">Микола Тарасов</h3>
+                <p class="team-card__position" lang="en">Marketing</p>
 
                 <ul class="team-link-list list">
-                  <li class="team-link-item">
-                    <a class="team-link" href="#">
+                  <li class="team-link-list__item">
+                    <a class="team-link-list__link" href="#">
                       <svg
                         aria-label="іконка інстаграма"
-                        class="team-icon"
+                        class="team-link-list__icon"
                         width="20"
                         height="20"
                       >
@@ -353,11 +375,11 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-link-item">
-                    <a class="team-link" href="#">
+                  <li class="team-link-list__item">
+                    <a class="team-link-list__link" href="#">
                       <svg
                         aria-label="іконка твітера"
-                        class="team-icon"
+                        class="team-link-list__icon"
                         width="20"
                         height="20"
                       >
@@ -365,11 +387,11 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-link-item">
-                    <a class="team-link" href="#">
+                  <li class="team-link-list__item">
+                    <a class="team-link-list__link" href="#">
                       <svg
                         aria-label="іконка фейсбука"
-                        class="team-icon"
+                        class="team-link-list__icon"
                         width="20"
                         height="20"
                       >
@@ -377,11 +399,11 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-link-item">
-                    <a class="team-link" href="#">
+                  <li class="team-link-list__item">
+                    <a class="team-link-list__link" href="#">
                       <svg
                         aria-label="іконка лінкедіна"
-                        class="team-icon"
+                        class="team-link-list__icon"
                         width="20"
                         height="20"
                       >
@@ -399,16 +421,16 @@
                 width="270"
                 height="260"
               />
-              <div class="team-card-text">
-                <h3 class="team-name">Михайло Єрмаков</h3>
-                <p class="team-position" lang="en">UI Designer</p>
+              <div class="team-card__text">
+                <h3 class="team-card__name">Михайло Єрмаков</h3>
+                <p class="team-card__position" lang="en">UI Designer</p>
 
                 <ul class="team-link-list list">
-                  <li class="team-link-item">
-                    <a class="team-link" href="#">
+                  <li class="team-link-list__item">
+                    <a class="team-link-list__link" href="#">
                       <svg
                         aria-label="іконка інстаграма"
-                        class="team-icon"
+                        class="team-link-list__icon"
                         width="20"
                         height="20"
                       >
@@ -416,11 +438,11 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-link-item">
-                    <a class="team-link" href="#">
+                  <li class="team-link-list__item">
+                    <a class="team-link-list__link" href="#">
                       <svg
                         aria-label="іконка твітера"
-                        class="team-icon"
+                        class="team-link-list__icon"
                         width="20"
                         height="20"
                       >
@@ -428,11 +450,11 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-link-item">
-                    <a class="team-link" href="#">
+                  <li class="team-link-list__item">
+                    <a class="team-link-list__link" href="#">
                       <svg
                         aria-label="іконка фейсбука"
-                        class="team-icon"
+                        class="team-link-list__icon"
                         width="20"
                         height="20"
                       >
@@ -440,11 +462,11 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-link-item">
-                    <a class="team-link" href="#">
+                  <li class="team-link-list__item">
+                    <a class="team-link-list__link" href="#">
                       <svg
                         aria-label="іконка лінкедіна"
-                        class="team-icon"
+                        class="team-link-list__icon"
                         width="20"
                         height="20"
                       >
@@ -458,15 +480,15 @@
           </ul>
         </div>
       </section>
-      <section class="clients-section">
+      <section class="client-section">
         <div class="container">
-          <h2 class="clients-heading">Постійні клієнти</h2>
-          <ul class="clients-list list">
-            <li class="client-list-item">
-              <a href="#" class="clients-link">
+          <h2 class="section-heading">Постійні клієнти</h2>
+          <ul class="client-list list">
+            <li class="client-list__item">
+              <a href="#" class="client-list__link">
                 <svg
                   aria-label="лого компанії"
-                  class="clients-icon"
+                  class="client-list__icon"
                   width="106"
                   height="60"
                 >
@@ -474,11 +496,11 @@
                 </svg>
               </a>
             </li>
-            <li class="client-list-item">
-              <a href="#" class="clients-link">
+            <li class="client-list__item">
+              <a href="#" class="client-list__link">
                 <svg
                   aria-label="лого компанії"
-                  class="clients-icon"
+                  class="client-list__icon"
                   width="106"
                   height="60"
                 >
@@ -486,11 +508,11 @@
                 </svg>
               </a>
             </li>
-            <li class="client-list-item">
-              <a href="#" class="clients-link">
+            <li class="client-list__item">
+              <a href="#" class="client-list__link">
                 <svg
                   aria-label="лого компанії"
-                  class="clients-icon"
+                  class="client-list__icon"
                   width="106"
                   height="60"
                 >
@@ -498,11 +520,11 @@
                 </svg>
               </a>
             </li>
-            <li class="client-list-item">
-              <a href="#" class="clients-link">
+            <li class="client-list__item">
+              <a href="#" class="client-list__link">
                 <svg
                   aria-label="лого компанії"
-                  class="clients-icon"
+                  class="client-list__icon"
                   width="106"
                   height="60"
                 >
@@ -510,11 +532,11 @@
                 </svg>
               </a>
             </li>
-            <li class="client-list-item">
-              <a href="#" class="clients-link">
+            <li class="client-list__item">
+              <a href="#" class="client-list__link">
                 <svg
                   aria-label="лого компанії"
-                  class="clients-icon"
+                  class="client-list__icon"
                   width="106"
                   height="60"
                 >
@@ -522,11 +544,11 @@
                 </svg>
               </a>
             </li>
-            <li class="client-list-item">
-              <a href="#" class="clients-link">
+            <li class="client-list__item">
+              <a href="#" class="client-list__link">
                 <svg
                   aria-label="лого компанії"
-                  class="clients-icon"
+                  class="client-list__icon"
                   width="106"
                   height="60"
                 >
@@ -539,46 +561,48 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="footer-container container">
-        <div class="address-info-box">
-          <a class="footer-logo" href="./index.html"
-            >Web<span class="footer-logo-part">Studio</span></a
+      <div class="container page-footer__container">
+        <div class="address-container">
+          <a class="logo" href="./index.html"
+            >Web<span class="logo__item logo__item_light">Studio</span></a
           >
-          <address class="address-info">
-            <ul class="address-list list">
-              <li>
+          <address class="address-container__address-info address-info">
+            <ul class="list address-info__list">
+              <li class="address-info__list-item">
                 <a
-                  class="address-link"
+                  class="link address-info__address-link"
                   href="https://goo.gl/maps/ioWXc1XH5CA14CVF7"
                   target="_blank"
                   rel="noopener norefferer nofollow"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li>
+              <li class="address-info__list-item">
                 <a
-                  class="footer-link"
+                  class="link address-info__contact-link"
                   href="mailto:info@devstudio.com"
                   target="_blank"
                   >info@devstudio.com</a
                 >
               </li>
-              <li>
-                <a class="footer-link" href="tel:+380961111111"
+              <li class="address-info__list-item">
+                <a
+                  class="link address-info__contact-link"
+                  href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="join-box">
-          <p class="footer-paragraph">Приєднуйтесь</p>
-          <ul class="join-list list">
-            <li class="join-list-item">
-              <a class="join-link" href="#">
+        <div class="page-footer__section">
+          <p class="page-footer__section-title">Приєднуйтесь</p>
+          <ul class="list join-us-list">
+            <li class="join-us-list__item">
+              <a class="join-us-list__link" href="#">
                 <svg
                   aria-label="інонка інстаграма"
-                  class="join-icon"
+                  class="join-us-list__icon"
                   width="20"
                   height="20"
                 >
@@ -586,11 +610,11 @@
                 </svg>
               </a>
             </li>
-            <li class="join-list-item">
-              <a class="join-link" href="#">
+            <li class="join-us-list__item">
+              <a class="join-us-list__link" href="#">
                 <svg
                   aria-label="інонка твітера"
-                  class="join-icon"
+                  class="join-us-list__icon"
                   width="20"
                   height="20"
                 >
@@ -598,11 +622,11 @@
                 </svg>
               </a>
             </li>
-            <li class="join-list-item">
-              <a class="join-link" href="#">
+            <li class="join-us-list__item">
+              <a class="join-us-list__link" href="#">
                 <svg
                   aria-label="іконка фейсбука"
-                  class="join-icon"
+                  class="join-us-list__icon"
                   width="20"
                   height="20"
                 >
@@ -610,11 +634,11 @@
                 </svg>
               </a>
             </li>
-            <li class="join-list-item">
-              <a class="join-link" href="#">
+            <li class="join-us-list__item">
+              <a class="join-us-list__link" href="#">
                 <svg
                   aria-label="іконка лінкедіна"
-                  class="join-icon"
+                  class="join-us-list__icon"
                   width="20"
                   height="20"
                 >
@@ -624,20 +648,22 @@
             </li>
           </ul>
         </div>
-        <div class="footer-form-box">
-          <p class="footer-paragraph">Підпишіться на розсилку</p>
-          <form>
+        <div class="page-footer__section">
+          <p class="page-footer__section-title">Підпишіться на розсилку</p>
+          <form class="subscription-form">
             <input
-              class="footer-input"
+              class="subscription-form__email"
               type="email"
               placeholder="E-mail"
               name="user-email"
               required
             />
-            <button type="submit" class="footer-form-btn">
-              Підписатися
-              <svg
-                class="send-icon"
+            <button
+              type="submit"
+              class="button subscription-form__submit-button"
+            >
+              Підписатися<svg
+                class="subscription-form__submit-icon"
                 aria-label="іконка відправлення"
                 width="24"
                 height="24"
@@ -748,7 +774,9 @@
             <a class="policy-link" href="#">Умови договору</a>
           </label>
 
-          <button class="modal-form-button" type="submit">Відправити</button>
+          <button class="button modal-form-button" type="submit">
+            Відправити
+          </button>
         </form>
       </div>
     </div>
